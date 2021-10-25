@@ -1,0 +1,85 @@
+# data
+S(t) = 26324.896999999866
+
+# bare minimum
+S(t) = 23163.883738420227
+
+# Spitsfile
+S1(t) = 23375.081738669876
+
+# File buiten
+S2(t) = 1723.832985725926
+
+# Ongeval
+S3(t) = 3098.568385133086
+
+S(t) = S1(t) + S2(t) + S3(t) = 28197.4829
+
+###############################################
+# 9 weekend days, 21 working days
+
+# Spitsfile real value: 20903.361
+Spitsfile expon: 23386.81873559079
+Spitsfile gamma: 31388.570932668536
+Spitsfile normal: 21810.306273783543 !!!
+
+
+# File buiten workdays real value: 997.499
+File buiten workdays exponential: 1352.3309343806845
+File buiten workdays gamma: 2844.6002720260426
+File buiten workdays normal distribution: 1294.9289431326445  !!!
+
+# File buiten weekend real value: 144.844
+File buiten weekend exponential: 310.57591616386094
+File buiten weekend gamma: 219.54010021197536 !!!
+File buiten weekend normal distribution: 293.19809128709477
+
+# Ongeval working days real value: 1457.634
+Ongeval working days exponential: 2294.313393323854
+Ongeval working days gamma: 749.4505964239058
+    Ongeval working days normal distribution: 2253.594185101673 !!!
+
+# Ongeval weekend real value: 292.816
+Ongeval weekend exponential:693.9593502328669
+Ongeval weekend gamma: 310.7028270508333  !!!
+Ongeval weekend normal distribution: 683.1208655578533
+
+=> 25886 minutes approximately
+
+######################################################################
+Number of runs Spitsfile: #910 minutes ---------------- OK
+s2=761441.3748302468
+m=21807.297165859436
+n= 3.532367087969902
+(20952.14320522605, 22662.451126492822)
+Spitsfile gamma: 21807.29716585946
+
+We simulated the CPP 4 times. Our result was: 21811.197799745492
+
+Number of runs Ongeval weekend: #20 minutes ----------------------- OK
+s2=5440.726461747589
+m=240.8230069720159
+n= 52.25273693862385
+(220.96450051301784, 260.6815134310139)
+File buiten weekend gamma: 240.82300697201595
+
+Number of runs Ongeval workday: #200 minutes -------------------- OK
+s2=11099.338400247392
+m=750.1834054681281
+n= 4.263921839839038
+(657.8370808001799, 842.5297301360762)
+File buiten weekend gamma: 750.183405468128
+
+Number of runs File buiten workday: #100 minutes ---------------- OK
+s2=81736.5361187216
+m=1295.654790858002
+n= 7.849976928842023
+(1097.5389544283764, 1493.7706272876273)
+File buiten weekend gamma: 1295.6547908580014
+
+Number of runs File buiten weekend: # 20 minutes ----------------- OK
+s2=1967.1304302492495
+m=170.97398302875501
+n= 18.89232065211379
+(151.0307368947805, 190.91722916272954)
+File buiten weekend gamma: 170.97398302875504
